@@ -1,0 +1,42 @@
+@SuppressWarnings
+
+SuppressWarnings is to suppress or ignore warnings coming from the compiler, 
+or we can say that  the compiler will ignore warnings if any for the code which we have
+
+Example:
+
+import java.util.*;  
+class Anno{  
+@SuppressWarnings("unchecked")  
+public static void main(String args[]){  
+ArrayList list=new ArrayList();  
+list.add("garg");  
+list.add("hello");  
+list.add("yahoo");  
+  
+for(Object obj:list)  
+System.out.println(obj);  
+  
+}}  
+
+
+@Deprecated---------------------------
+
+Deprecated annoation warns that this method is going to be deprecated so compiler generates a warning . 
+It informs user that it may be removed in the future versions. So, it is better not to use the methods.
+
+
+example:
+class A{  
+void m(){System.out.println("hello garg");}  
+  
+@Deprecated  
+void n(){System.out.println("hello yahoo");}  
+}  
+  
+class Anno{  
+public static void main(String args[]){  
+  
+A a=new A();  
+a.n();  
+}}  
